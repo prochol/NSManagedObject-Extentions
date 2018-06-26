@@ -2,7 +2,7 @@
 
 Swift NSManagedObject Extension Assistant, which allows you to receive queries for entities or directly query results. You can implement the 'class BaseEntityRepository <Entity: NSManagedObject>' repository for easy retrieval of query results and larger constraints or specific.
 
-**Note:** This repository was made as an alternative for easier abandonment of the Magic Record in favor of native date bark.
+**Note:** This repository was made as an alternative for easier abandonment of the Magic Record in favor of native Core Data.
 
 ## Requirements
 

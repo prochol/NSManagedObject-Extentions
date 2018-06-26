@@ -54,11 +54,7 @@ extension NSManagedObject {
 
     private class func execute(fetchRequest: NSFetchRequest<NSManagedObject>, in context: NSManagedObjectContext = NSManagedObjectContext.default()) -> [NSManagedObject]? {
         do {
-            if #available(iOS 10.0, *) {
-                return try (fetchRequest.execute() as? [NSManagedObject])
-            } else {
-                return try (context.fetch(fetchRequest) as? [NSManagedObject])
-            }
+            return try (context.fetch(fetchRequest) as? [NSManagedObject])
         }
         catch let error {
             debugPrint("The fetch request executed FAILED with error: \(error)")
